@@ -1,0 +1,10 @@
+
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Playfair Display', serif;
+}
+
+h1 {
+    color: #163c54;
+    font-family: var(--secondary-font);
+}
