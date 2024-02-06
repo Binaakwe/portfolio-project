@@ -7,10 +7,33 @@
 body {
   font-family: var(--primary-font);
 }
+
+nav {
+  padding: 60px 0px 100px;
+}
+
+nav li {
+  display: inline;
+  line-height: 24px;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--secondary-color);
+}
+.home-nav {
+  padding: 0 24px;
+}
 .hero {
   background: var(--primary-color);
   text-align: center;
-  padding: 160px 20px;
 }
 
 .hero p {
@@ -33,13 +56,6 @@ h1 {
   font-weight: 400;
 }
 
-.section {
-  padding: 250px 20px;
-}
-
-.section-content {
-  margin: 0 75px;
-}
 .section h1 {
   font-size: 64px;
   line-height: 85px;
@@ -102,6 +118,7 @@ p {
 .project-heading {
   padding: 0px 400px 100px 0;
 }
+
 .project-content {
   text-align: center;
 }
@@ -121,15 +138,27 @@ p {
   border-radius: 20px;
 }
 @media (max-width: 1000px) {
+  .logo-image {
+    max-height: 25px;
+  }
+  .home-nav {
+    padding: 0 12px;
+  }
+  nav {
+    padding: 30px 20px;
+  }
+  nav li {
+    margin-left: 10px;
+  }
   h1 {
     font-size: 64px;
     line-height: 60px;
   }
-  .hero {
-    padding: 80px 20px;
+  .hero h1 {
+    padding: 10px;
   }
   .intro-description {
-    padding: 0;
+    padding: 20px 0;
   }
   h2 {
     font-size: 44px;
