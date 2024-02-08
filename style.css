@@ -137,6 +137,52 @@ p {
 .project-image {
   border-radius: 20px;
 }
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--primary-color);
+  padding: 30px 120px;
+  border-radius: 20px;
+}
+
+footer .contact-box h4 {
+  font-size: 48px;
+  line-height: 64px;
+  font-family: var(--secondary-font);
+}
+
+footer .contact-box p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+footer .email-link:hover {
+  color: var(--secondary-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
 @media (max-width: 1000px) {
   .logo-image {
     max-height: 25px;
@@ -169,6 +215,6 @@ p {
   }
   .section {
     text-align: center;
-    padding: 0;
+    padding: 10px;
   }
 }
