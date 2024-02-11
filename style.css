@@ -1,13 +1,27 @@
 :root {
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Playfair Display", serif;
-  --primary-color: #f9f7fe;
-  --secondary-color: #6c63ff;
+  --primary-color: #f1f8ff;
+  --secondary-color: #0a729d;
+  --tertiary-color: #01333e;
 }
 body {
   font-family: var(--primary-font);
+  color: var(--tertiary-color);
 }
 
+.icon-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+#logo {
+  font-size: 40px;
+  color: var(--tertiary-color);
+  font-weight: 500;
+  padding-top: 10px;
+}
 nav {
   padding: 60px 0px 100px;
 }
@@ -21,7 +35,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #272142;
+  color: var(--tertiary-color);
 }
 
 nav a:hover,
@@ -40,8 +54,7 @@ nav li.active a {
 .hero p {
   font-weight: 700;
   font-size: 36px;
-  line-height: 54px;
-  color: #272142;
+  color: var(--tertiary-color);
 }
 h1 {
   font-family: var(--secondary-font);
@@ -53,7 +66,7 @@ h1 {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
-  color: #272142;
+  color: var(--tertiary-color);
   font-weight: 400;
 }
 
@@ -72,7 +85,7 @@ h1 {
 
 .btn-branding {
   background: var(--secondary-color);
-  color: white;
+  color: var(--primary-color);
   border-radius: 4px;
   font-weight: 500;
   font-size: 18px;
@@ -80,6 +93,10 @@ h1 {
   padding: 18px 30px;
 }
 
+.btn-branding:hover {
+  border: var(--secondary-color) 1px solid;
+  color: #0a729d;
+}
 h2 {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -91,7 +108,7 @@ h2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #272142;
+  color: #01333e;
   padding: 100px 0 66px;
 }
 
@@ -99,17 +116,22 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  color: #272142;
+  color: #01333e;
 }
 
 .btn-branding-outline {
   color: var(--secondary-color);
-  border: #6c63ff 1px solid;
+  border: var(--secondary-color) 1px solid;
   border-radius: 4px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   padding: 18px 30px;
+}
+
+.btn-branding-outline:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .project-description {
@@ -185,11 +207,12 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 1000px) {
-  .logo-image {
-    max-height: 25px;
+  .icon-image {
+    height: 40px;
+    width: 40px;
   }
   .home-nav {
-    padding: 0 12px;
+    padding: 10px 22px;
   }
   nav {
     padding: 30px 20px;
